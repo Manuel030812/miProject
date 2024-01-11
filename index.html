@@ -1,80 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rifa con Ruleta</title>
-    <style>
-        body {
-            text-align: center;
-            padding: 20px;
-            background-image: url('rifa.jpg'); /* Ajusta la ruta según la ubicación real de tu imagen de fondo */
-            background-size: cover;
-            background-position: center;
-            color: white; /* Para que el texto sea visible en el fondo */
-        }
-
-        #ruleta {
-            width: 300px;
-            height: 300px;
-        }
-
-        #resultado {
-            margin-top: 20px;
-            font-weight: bold;
-            background-image: url('fondo.jpg'); /* Ajusta la ruta según la ubicación real de tu imagen de fondo */
-            background-size: cover;
-            background-position: center;
-            padding: 20px;
-            border-radius: 10px; /* Ajusta según sea necesario */
-        }
-    </style>
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-
-    <h1>Rifa con Ruleta</h1>
-
-    <img id="ruleta" src="ruletastatica.png" alt="Ruleta" />
-
-    <br>
-
-    <button onclick="iniciarRuleta()">¡Girar la Ruleta!</button>
-
-    <div id="resultado"></div>
-
-    <script>
-        function iniciarRuleta() {
-            var ruleta = document.getElementById("ruleta");
-            var resultadoDiv = document.getElementById("resultado");
-
-            // Cambia la fuente de la imagen a la animación de la ruleta
-            ruleta.src = "ruleta.gif";
-
-            // Después de 5 segundos, cambia la imagen y muestra el resultado
-            setTimeout(function() {
-                ruleta.src = "ruletastatica.png";
-
-                // Limpiar cualquier contenido previo y agregar el nuevo contenido al resultadoDiv
-                resultadoDiv.innerHTML = "";
-
-                // Crear dinámicamente un elemento de imagen
-                var imagenResultado = document.createElement("img");
-                imagenResultado.src = "imagenGanadora.jpeg"; // Reemplaza con la ruta de tu imagen ganadora
-                imagenResultado.alt = "Ganador";
-                imagenResultado.style.width = "200px"; // Ajusta el tamaño según sea necesario
-
-                // Agregar la nueva imagen al resultadoDiv
-                resultadoDiv.appendChild(imagenResultado);
-
-                // Crear dinámicamente un elemento de texto
-                var textoGanador = document.createElement("p");
-                textoGanador.innerHTML = "¡Felicidades! <br> Has ganado algo increíble.";
-
-                // Agregar el nuevo texto al resultadoDiv
-                resultadoDiv.appendChild(textoGanador);
-            }, 5000);
-        }
-    </script>
-
+    <h4>hola mundo 2</h4>
+    <h2>comig 2</h2>
 </body>
 </html>
